@@ -1,0 +1,4 @@
+Compra:11,25; Data e Hora:20/08/2020 12:10:10 ;Usuário:Karen
+Compra:31,68; Data e Hora:24/08/2020 14:07:02 ;Usuário:Brenda
+Compra:12,50; Data e Hora:15/03/2021 20:37:19 ;Usuário:Brenda
+Compra:24,47; Data e Hora:15/03/2021 20:37:41 ;Usuário:Brenda
