@@ -17,11 +17,11 @@ namespace TrabSistemaDeCaixaV1
         private string _caminhoUsuario = Path.Join(UserPath.makeDirectory(), @"\Usuarios.txt");
         private string _caminhoSenha = Path.Join(UserPath.makeDirectory(),@"\Senhas.txt");
         public  string[] caminhofoto = {
-            @"D:\Programação\Arquivos\Trabalhos\Senai\Programação de Aplicativos\TrabSistemaDeCaixaV4\Arquivos\Pessoas\Pessoa1.jpg",
-            @"D:\Programação\Arquivos\Trabalhos\Senai\Programação de Aplicativos\TrabSistemaDeCaixaV4\Arquivos\Pessoas\Pessoa2.png",
-            @"D:\Programação\Arquivos\Trabalhos\Senai\Programação de Aplicativos\TrabSistemaDeCaixaV4\Arquivos\Pessoas\Pessoa3.jpg",
-            @"D:\Programação\Arquivos\Trabalhos\Senai\Programação de Aplicativos\TrabSistemaDeCaixaV4\Arquivos\Pessoas\Pessoa4.png",
-            @"D:\Programação\Arquivos\Trabalhos\Senai\Programação de Aplicativos\TrabSistemaDeCaixaV4\Arquivos\Pessoas\Pessoa5.png"
+            UserPath.pathImagePessoas("Pessoa1.jpg"),
+            UserPath.pathImagePessoas("Pessoa2.png"),
+            UserPath.pathImagePessoas("Pessoa3.jpg"),
+            UserPath.pathImagePessoas("Pessoa4.png"),
+            UserPath.pathImagePessoas("Pessoa5.png")
             };
 
         private bool _verUsu, _verSen = false;

@@ -7,23 +7,30 @@ namespace TrabSistemaDeCaixaV1
 {
     class UserPath
     {
-        static private string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        static private string pathDesktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        static private string pathSolution = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Arquivos");
+
         static public string makeDirectory()
         {
-            string endPath = Path.Join(path, @"/Arquivos/BancoTrabalho"); ;
-            if (!Directory.Exists(Path.Join(path, @"/Arquivos/BancoTrabalho")))
+            string endPath = Path.Combine(pathDesktop, "Arquivos","BancoTrabalho"); ;
+            if (!Directory.Exists(Path.Combine(pathDesktop, "Arquivos", "BancoTrabalho")))
             {
-                Directory.CreateDirectory(Path.Join(path, @"/Arquivos/BancoTrabalho"));
+                Directory.CreateDirectory(Path.Combine(pathDesktop, "Arquivos", "BancoTrabalho"));
             }
             return endPath; 
         }
         
-        static public string pathImage(string name)
+        static public string pathImageProducts(string name)
         {
-            string image = Path.Join(makeDirectory(),name);
+            string image = Path.Combine(pathSolution, "Produtos", name);
             return image;
         }
 
+        static public string pathImagePessoas(string name)
+        {
+            string image = Path.Combine(pathSolution, "Pessoas", name);
+            return image;
+        }
 
     }
 }

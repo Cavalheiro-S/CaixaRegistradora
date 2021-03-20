@@ -12,16 +12,18 @@ namespace TrabSistemaDeCaixaV1
         private string _caminhoProduto = Path.Combine(UserPath.makeDirectory(),"Produtos.txt");
         private string _caminhoPreco = Path.Combine(UserPath.makeDirectory(),"Precos.txt");
         private string[] _caminhoFotos =
-            {@"D:\Programação\Arquivos\Trabalhos\Senai\Programação de Aplicativos\TrabSistemaDeCaixaV4\Arquivos\Produtos\Abacaxi.png",
-            @"D:\Programação\Arquivos\Trabalhos\Senai\Programação de Aplicativos\TrabSistemaDeCaixaV4\Arquivos\Produtos\Banana.png",
-            @"D:\Programação\Arquivos\Trabalhos\Senai\Programação de Aplicativos\TrabSistemaDeCaixaV4\Arquivos\Produtos\Coco.png",
-            @"D:\Programação\Arquivos\Trabalhos\Senai\Programação de Aplicativos\TrabSistemaDeCaixaV4\Arquivos\Produtos\Limão.png",
-            @"D:\Programação\Arquivos\Trabalhos\Senai\Programação de Aplicativos\TrabSistemaDeCaixaV4\Arquivos\Produtos\Maçã.png",
-            @"D:\Programação\Arquivos\Trabalhos\Senai\Programação de Aplicativos\TrabSistemaDeCaixaV4\Arquivos\Produtos\Manga.png",
-            @"D:\Programação\Arquivos\Trabalhos\Senai\Programação de Aplicativos\TrabSistemaDeCaixaV4\Arquivos\Produtos\Melancia.jpg",
-            @"D:\Programação\Arquivos\Trabalhos\Senai\Programação de Aplicativos\TrabSistemaDeCaixaV4\Arquivos\Produtos\Melão.png",
-            @"D:\Programação\Arquivos\Trabalhos\Senai\Programação de Aplicativos\TrabSistemaDeCaixaV4\Arquivos\Produtos\Morango.png",
-            @"D:\Programação\Arquivos\Trabalhos\Senai\Programação de Aplicativos\TrabSistemaDeCaixaV4\Arquivos\Produtos\Uva.png"};
+            {
+                UserPath.pathImageProducts("Abacaxi.png"),
+                UserPath.pathImageProducts("Banana.png"),
+                UserPath.pathImageProducts("Coco.png"),
+                UserPath.pathImageProducts("Limão.png"),
+                UserPath.pathImageProducts("Maçã.png"),
+                UserPath.pathImageProducts("Manga.png"),
+                UserPath.pathImageProducts("Melancia.jpg"),
+                UserPath.pathImageProducts("Melão.png"),
+                UserPath.pathImageProducts("Morango.png"),
+                UserPath.pathImageProducts("Uva.png")
+            };
 
         private string _caminhoTotal = Path.Combine(UserPath.makeDirectory(), "Compras.txt");
         private string[] _frutas = { "Abacaxi", "Banana", "Coco", "Limao", "Maçã", "Manga", "Melancia", "Melão", "Morango", "Uva" };
