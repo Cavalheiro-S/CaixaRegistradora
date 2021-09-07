@@ -1,4 +1,4 @@
-# Project-Cash-Register-Fruit-Store
+# Caixa Registradora
 
 Projeto idealizado com base nos conhecimentos adquiridos no segundo semestre do curso técnico de desenvolvimento de sistemas
 
